@@ -10,7 +10,6 @@ namespace solid_principle.open_closed.wrong
     {
         public Calculator()
         {
-
             var devReports = new List<DeveloperReport>
                 {
                     new DeveloperReport {Id = 1, Name = "Dev1", Level = "Senior developer", HourlyRate  = 30.5, WorkingHours = 160 },
@@ -19,6 +18,9 @@ namespace solid_principle.open_closed.wrong
                 };
             var calculator = new SalaryCalculator(devReports);
             Console.WriteLine($"Sum of all the developer salaries is {calculator.CalculateTotalSalaries()} dollars");
+
+            // We now want to change de calculation of the Senior developer by adding 20%
+            // First thing we want to do is to add a if/else condition and change de rate OCP is violated because we modified the SalaryCalculator class !
         }
     }
 }
