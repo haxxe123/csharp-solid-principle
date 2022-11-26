@@ -12,10 +12,10 @@ namespace solid_principle.single_responsibility.right
         public DateTime InvDate { get; set; }
         private ILogger fileLogger;
         private MailSender emailSender;
-        public Invoice()
+        public Invoice(Logger fileLogger, MailSender emailSender)
         {
-            fileLogger = new Logger();
-            emailSender = new MailSender();
+            this.fileLogger = fileLogger;
+            this.emailSender = emailSender;
         }
         public void AddInvoice()
         {
