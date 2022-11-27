@@ -6,4 +6,8 @@
     <RootNamespace>solid_principle</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="single-responsibility\example2\" />
+  </ItemGroup>
+
 </Project>
