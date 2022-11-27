@@ -18,3 +18,6 @@ A client should never be forced to implement an interface that it doesn’t use,
 
 ## Dependency Inversion Principle
 The principle of dependency inversion refers to the decoupling of software modules. This way, instead of high-level modules depending on low-level modules, both will depend on abstractions.
+
+## Sources
+https://code-maze.com/ and google
