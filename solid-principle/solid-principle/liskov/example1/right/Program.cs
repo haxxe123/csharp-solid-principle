@@ -8,7 +8,7 @@ namespace solid_principle.liskov.example1.right
 {
     class Program
     {
-        static void Main(string[] args)
+        public void Main()
         {
             var numbers = new int[] { 5, 7, 9, 8, 1, 6, 4 };
             Calculator sum = new SumCalculator(numbers); // Calculator can replace SumCalculator LISKOV ok

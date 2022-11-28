@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace solid_principle.liskov.example1.wrong
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public void Main()
         {
             var numbers = new int[] { 5, 7, 9, 8, 1, 6, 4 };
             SumCalculator sum = new SumCalculator(numbers);
